@@ -39,7 +39,7 @@ exports.getAllListings = async (req, res) => {
 
 exports.postListing = async (req, res) => {
   try {
-    const assetsBaseUrl = "http://192.168.8.161:9000/assets/";
+    const assetsBaseUrl = "https://dwi-backend-fhvx.onrender.com/assets/";
     let newLocation = null;
     if (req.body.location) newLocation = req.body.location;
 
