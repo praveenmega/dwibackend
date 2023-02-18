@@ -20,7 +20,7 @@ const router = express.Router();
 
 router
     .route('/')
-    .get(getAllListings)
-    .post(upload.array("images"),imageResize,postListing);
+    .get(auth,getAllListings)
+    .post(auth,upload.array("images"),imageResize,postListing);
 
 module.exports = router;
